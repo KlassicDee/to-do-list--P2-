@@ -1,5 +1,5 @@
 const todoInput = document.querySelector(".todo-input");
-const todoButton = document.querySelector(".todo-buttton");
+const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
 const filterOption = document.querySelector(".filter-todo");
 
@@ -70,7 +70,7 @@ function filterTodo(e){
                     todo.style.display ="flex";
                 }else {
                     
-                    todo.style.diplay = "none";
+                    todo.style.display = "none";
                 }
 break;
         }
@@ -110,7 +110,7 @@ function getLocalTodos() {
 
         const trashButton = document.createElement("button");
         trashButton.innerHTML ='<i class ="fas fa-trash"></li>';
-        trashButton.classList.add("complete-btn");
+        trashButton.classList.add("trash-btn");
         todoDiv.appendChild(trashButton);
 
         todoList.appendChild(todoDiv)
